@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A small, sincere apology — because some words deserve more than a quick sorry."
+    />
+    <meta name="theme-color" content="#241229" />
+    <title>A small sorry, from me to you</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&amp;family=Gloock&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <div class="noise" aria-hidden="true"></div>
+
+    <div class="ambient" aria-hidden="true">
+      <span class="orb orb-one"></span>
+      <span class="orb orb-two"></span>
+      <span class="orb orb-three"></span>
+      <span class="floating-word word-one">listen</span>
+      <span class="floating-word word-two">understand</span>
+      <span class="floating-word word-three">do better</span>
+    </div>
+
+    <button class="skip-intro" id="skipIntro" type="button">Skip intro</button>
+
+    <section class="intro" id="intro" aria-label="A short apology story">
+      <div class="intro-mark" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </div>
+      <p class="intro-line" data-beat="0">Sometimes, words leave an echo.</p>
+      <p class="intro-line" data-beat="1">Mine did.</p>
+      <p class="intro-line intro-line-emphasis" data-beat="2">And I wish I could take them back.</p>
+      <p class="intro-line" data-beat="3">What I can do is own them.</p>
+    </section>
+
+    <main class="page" id="apologyPage" aria-hidden="true" inert>
+      <div class="topline">
+        <span class="eyebrow">A small letter</span>
+        <span class="topline-rule"></span>
+        <span class="date" id="todayLabel"></span>
+      </div>
+
+      <article class="letter" aria-labelledby="letterTitle">
+        <div class="letter-seal" aria-hidden="true">
+          <span>♥</span>
+        </div>
+
+        <p class="salutation" id="salutation">Hey you,</p>
+        <h1 id="letterTitle">
+          I owe you a
+          <span class="title-accent">real apology.</span>
+        </h1>
+
+        <p class="lead" id="apologyReason">
+          I’m sorry for what I said. It was careless, and I understand that words
+          can stay with someone long after the moment has passed.
+        </p>
+
+        <div class="promise-grid">
+          <section class="promise-card">
+            <span class="promise-number">01</span>
+            <h2>No excuses.</h2>
+            <p>I’m not here to explain it away. I was wrong, and I take responsibility.</p>
+          </section>
+          <section class="promise-card">
+            <span class="promise-number">02</span>
+            <h2>Real effort.</h2>
+            <p>I want to listen better, speak with care, and let my actions prove it.</p>
+          </section>
+        </div>
+
+        <div class="heart-note">
+          <span class="heart-line" aria-hidden="true"></span>
+          <p>
+            You don’t have to be okay immediately. I just needed you to know that
+            <strong>I am genuinely sorry.</strong>
+          </p>
+        </div>
+
+        <div class="question-block">
+          <p class="question">Will you accept my apology?</p>
+          <div class="actions" id="actions">
+            <button class="button button-accept" id="acceptButton" type="button">
+              <span>Yes, apology accepted</span>
+              <span class="button-arrow" aria-hidden="true">↗</span>
+            </button>
+            <button class="button button-not-yet" id="notYetButton" type="button">
+              Not yet
+            </button>
+          </div>
+          <p class="button-hint" id="buttonHint" aria-live="polite">
+            Take all the time you need.
+          </p>
+        </div>
+
+        <footer class="signature">
+          <span>With a sincere heart,</span>
+          <strong id="senderName">Aayush</strong>
+        </footer>
+      </article>
+
+      <p class="page-note">Made with courage, not excuses.</p>
+    </main>
+
+    <div class="response-modal" id="acceptedModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="acceptedTitle">
+      <div class="modal-card">
+        <span class="modal-icon" aria-hidden="true">♥</span>
+        <p class="modal-kicker">A tiny weight just lifted</p>
+        <h2 id="acceptedTitle">Thank you.</h2>
+        <p>
+          I won’t take your forgiveness for granted. This means more than I can
+          put into words.
+        </p>
+        <button class="modal-close" id="closeModal" type="button">Keep this little moment</button>
+      </div>
+    </div>
+
+    <div class="response-modal" id="spaceModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="spaceTitle">
+      <div class="modal-card modal-card-space">
+        <span class="modal-icon" aria-hidden="true">☾</span>
+        <p class="modal-kicker">That’s completely okay</p>
+        <h2 id="spaceTitle">Take your time.</h2>
+        <p>
+          You never owe anyone instant forgiveness. I’ll respect your space and
+          keep working on being better.
+        </p>
+        <button class="modal-close" id="closeSpaceModal" type="button">Back to the letter</button>
+      </div>
+    </div>
+
+    <template id="confettiPiece">
+      <span class="confetti" aria-hidden="true"></span>
+    </template>
+
+    <script src="script.js"></script>
+  </body>
+</html>
