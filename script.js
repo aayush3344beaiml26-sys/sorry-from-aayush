@@ -20,11 +20,9 @@ let buttonIsRunning = false;
 let lastPointer = { x: 0, y: 0 };
 
 const escapeMessages = [
-  "Okay, I deserved that little escape.",
-  "Still thinking? That’s fair.",
-  "No pressure — but this button is shy.",
-  "I’ll keep trying to make things right.",
-  "Take your time. I mean it."
+  "That button is a little shy.",
+  "Still not ready? I understand.",
+  "Take your time."
 ];
 
 function applyPersonalisation() {
@@ -44,16 +42,8 @@ function applyPersonalisation() {
 
   if (reason) {
     document.querySelector("#apologyReason").textContent =
-      `I’m sorry for ${reason}. It was careless, and I understand that words can stay with someone long after the moment has passed.`;
+      `I’m sorry for ${reason}. I know it hurt you, and I truly regret it.`;
   }
-}
-
-function setDate() {
-  document.querySelector("#todayLabel").textContent = new Intl.DateTimeFormat("en-IN", {
-    day: "numeric",
-    month: "long",
-    year: "numeric"
-  }).format(new Date());
 }
 
 function finishIntro() {
@@ -236,5 +226,4 @@ window.addEventListener("resize", () => {
 });
 
 applyPersonalisation();
-setDate();
 playIntro();

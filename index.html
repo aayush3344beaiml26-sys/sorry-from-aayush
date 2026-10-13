@@ -25,9 +25,6 @@
       <span class="orb orb-one"></span>
       <span class="orb orb-two"></span>
       <span class="orb orb-three"></span>
-      <span class="floating-word word-one">listen</span>
-      <span class="floating-word word-two">understand</span>
-      <span class="floating-word word-three">do better</span>
     </div>
 
     <button class="skip-intro" id="skipIntro" type="button">Skip intro</button>
@@ -36,17 +33,13 @@
       <div class="intro-mark" aria-hidden="true">
         <span></span><span></span><span></span>
       </div>
-      <p class="intro-line" data-beat="0">Sometimes, words leave an echo.</p>
-      <p class="intro-line" data-beat="1">Mine did.</p>
-      <p class="intro-line intro-line-emphasis" data-beat="2">And I wish I could take them back.</p>
-      <p class="intro-line" data-beat="3">What I can do is own them.</p>
+      <p class="intro-line" data-beat="0">I messed up.</p>
+      <p class="intro-line intro-line-emphasis" data-beat="1">I’m sorry.</p>
     </section>
 
     <main class="page" id="apologyPage" aria-hidden="true" inert>
       <div class="topline">
-        <span class="eyebrow">A small letter</span>
-        <span class="topline-rule"></span>
-        <span class="date" id="todayLabel"></span>
+        <span class="eyebrow">A small sorry</span>
       </div>
 
       <article class="letter" aria-labelledby="letterTitle">
@@ -56,50 +49,31 @@
 
         <p class="salutation" id="salutation">Hey you,</p>
         <h1 id="letterTitle">
-          I owe you a
-          <span class="title-accent">real apology.</span>
+          I’m
+          <span class="title-accent">sorry.</span>
         </h1>
 
         <p class="lead" id="apologyReason">
-          I’m sorry for what I said. It was careless, and I understand that words
-          can stay with someone long after the moment has passed.
+          I shouldn’t have said what I said. I know it hurt you, and I truly regret it.
         </p>
-
-        <div class="promise-grid">
-          <section class="promise-card">
-            <span class="promise-number">01</span>
-            <h2>No excuses.</h2>
-            <p>I’m not here to explain it away. I was wrong, and I take responsibility.</p>
-          </section>
-          <section class="promise-card">
-            <span class="promise-number">02</span>
-            <h2>Real effort.</h2>
-            <p>I want to listen better, speak with care, and let my actions prove it.</p>
-          </section>
-        </div>
 
         <div class="heart-note">
           <span class="heart-line" aria-hidden="true"></span>
-          <p>
-            You don’t have to be okay immediately. I just needed you to know that
-            <strong>I am genuinely sorry.</strong>
-          </p>
+          <p>No excuses. <strong>I’ll do better.</strong></p>
         </div>
 
         <div class="question-block">
-          <p class="question">Will you accept my apology?</p>
+          <p class="question">Can you forgive me?</p>
           <div class="actions" id="actions">
             <button class="button button-accept" id="acceptButton" type="button">
-              <span>Yes, apology accepted</span>
+              <span>Apology accepted</span>
               <span class="button-arrow" aria-hidden="true">↗</span>
             </button>
             <button class="button button-not-yet" id="notYetButton" type="button">
-              Not yet
+              Not accepted
             </button>
           </div>
-          <p class="button-hint" id="buttonHint" aria-live="polite">
-            Take all the time you need.
-          </p>
+          <p class="button-hint sr-only" id="buttonHint" aria-live="polite"></p>
         </div>
 
         <footer class="signature">
@@ -108,32 +82,23 @@
         </footer>
       </article>
 
-      <p class="page-note">Made with courage, not excuses.</p>
     </main>
 
     <div class="response-modal" id="acceptedModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="acceptedTitle">
       <div class="modal-card">
         <span class="modal-icon" aria-hidden="true">♥</span>
-        <p class="modal-kicker">A tiny weight just lifted</p>
         <h2 id="acceptedTitle">Thank you.</h2>
-        <p>
-          I won’t take your forgiveness for granted. This means more than I can
-          put into words.
-        </p>
-        <button class="modal-close" id="closeModal" type="button">Keep this little moment</button>
+        <p>It really means a lot to me. ♥</p>
+        <button class="modal-close" id="closeModal" type="button">Close</button>
       </div>
     </div>
 
     <div class="response-modal" id="spaceModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="spaceTitle">
       <div class="modal-card modal-card-space">
         <span class="modal-icon" aria-hidden="true">☾</span>
-        <p class="modal-kicker">That’s completely okay</p>
         <h2 id="spaceTitle">Take your time.</h2>
-        <p>
-          You never owe anyone instant forgiveness. I’ll respect your space and
-          keep working on being better.
-        </p>
-        <button class="modal-close" id="closeSpaceModal" type="button">Back to the letter</button>
+        <p>I understand. I’ll respect your space.</p>
+        <button class="modal-close" id="closeSpaceModal" type="button">Back</button>
       </div>
     </div>
 
